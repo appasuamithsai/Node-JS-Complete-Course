@@ -1,0 +1,10 @@
+extends layout/main-layout.pug
+
+block content 
+    main 
+        if users.length >0 
+            each user in users
+                ul  
+                    li #    {user.name}
+        else    
+            h1 No Users

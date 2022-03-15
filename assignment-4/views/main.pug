@@ -1,0 +1,9 @@
+extends layout/main-layout.pug
+
+block content   
+    main
+        form.product-form(action="/add-user",method="POST")
+            div.form-control
+                label Name
+                input(type="text",name="name",id="name")
+            button.btn(type="submit") Add User
